@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>notes</title>
+</head>
+<body>
+<h1>notes</h1>
+<div class="page-header">
+  {% for dict_item in notes_data %}
+    <div>
+        <strong>{{dict_item['date']}}</strong>: <strong>{{dict_item['message']}}</strong>
+    </div>
+  {% endfor %}
+</div>
+
+<a href="/"><button>home page</button></a>
+
+</body>
+</html>
